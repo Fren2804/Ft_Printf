@@ -31,7 +31,7 @@ static void	ft_control_printf(va_list args, char const *str, int *counter)
 	else if (*str == 'd' || *str == 'i')
 		ft_putnbr_base(va_arg(args, int), "0123456789", counter);
 	else if (*str == 'u')
-		ft_putnbr_base_ptr((unsigned long) va_arg(args, unsigned int),
+		ft_putnbr_base_ptr((unsigned int) va_arg(args, unsigned int),
 			"0123456789", counter);
 	else if (*str == 'x')
 		ft_putnbr_base_ptr(va_arg(args, unsigned int), H_LOW, counter);
